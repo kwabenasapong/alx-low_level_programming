@@ -1,0 +1,22 @@
+#!/bin/bash
+#1
+echo "#!/bin/bash" > 1-complier
+echo "gcc $CFILE -c -o main.o" >> 1-complier
+chmod 755 1-complier
+
+#2
+echo "#!/bin/bash" > 2-assembler
+echo "gcc $CFILE -S -o main.s" >> 2-assembler
+chmod 755 2-assembler
+
+#3
+echo "#!/bin/bash" > 3-name
+echo "gcc $CFILE -o cisfun" >> 3-name
+chmod 755 3-name
+
+git add .
+git ci -m 'Tasks 1 to 3'
+git push
+
+echo "kwabenasapong"
+echo "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"
