@@ -4,8 +4,8 @@
  * a multilingual puzzle
 */
 #include <stdio.h>
-int main ()
+int main(void)
 {
-	puts("\"Programming is a like building a multilingual puzzle");
+	puts("\"Programming is like building a multilingual puzzle");
 	return (0);
 }
