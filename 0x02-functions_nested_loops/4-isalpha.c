@@ -7,7 +7,7 @@
  */
 int _isalpha(int c)
 {
-	char alpha_low[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWWXYZ";
+	char alpha_low[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	int i = 0;
 
 	while (i < 52)
