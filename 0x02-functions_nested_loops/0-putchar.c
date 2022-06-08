@@ -6,12 +6,12 @@
  */
 int main(void)
 {
-	unsigned char c[] = "_putchar";
+	int c[] = "_putchar";
 	char i = 0;
 
 	while (1 < 9)
 	{
-		_putchar(c[i]);
+		_putchar((char)c[i]);
 		i++;
 	}
 	_putchar('\n');
