@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	char c[] = "_putchar";
+	unsigned char c[] = "_putchar";
 	char i = 0;
 
 	while (1 < 9)
