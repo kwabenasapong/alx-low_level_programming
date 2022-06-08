@@ -1,22 +1,22 @@
 #include "main.h"
 
 /**
- *  *_isalpha main - entry point
- *   *Return: Always void (success)
- *    */
+ *_isalpha - entry point
+ *int c: integer value received by the function
+ *Return: 1 is false, 0 is true
+ */
 int _isalpha(int c)
 {
 	char alpha_low[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWWXYZ";
 	int i = 0;
+
 	while (i < 52)
 	{
 		if (c == alpha_low[i])
 		{
-		        return (1);
-		        break;
+			return (1);
 		}
-
 		i++;
 	}
-        return(0);
+	return (0);
 }
