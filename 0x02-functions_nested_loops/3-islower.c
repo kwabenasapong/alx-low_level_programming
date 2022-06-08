@@ -1,21 +1,22 @@
 #include "main.h"
 
 /**
- *islower main - entry point
- *Return: Always void (success)
+ *_islower - entry point
+ *@c: the integer value the function receives
+ *Return: 1 if true, 0 is false
  */
 int _islower(int c)
 {
 	char alpha_low[] = "abcdefghijklmnopqrstuvwxyz";
-	int i=0;
-	while(i < 26)
+	int i = 0;
+
+	while (i < 26)
 	{
-	        if (c == alpha_low[i])
+		if (c == alpha_low[i])
 		{
 			return (1);
-	        	break;
 		}
 		i++;
 	}
-        return(0);
+	return (0);
 }

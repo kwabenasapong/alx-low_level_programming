@@ -2,8 +2,8 @@
 
 /**
  *_isalpha - entry point
- *Return: 1 if alphabet or 0 if not
- *@c: integer passed to function
+ *@c: integer value received by the function
+ *Return: 1 is false, 0 is true
  */
 int _isalpha(int c)
 {
