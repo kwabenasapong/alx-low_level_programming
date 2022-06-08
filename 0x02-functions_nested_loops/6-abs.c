@@ -2,14 +2,12 @@
 
 /**
  * _abs - entry point
- * @variablename: integer passed to function
+ * @i: integer passed to function
  * Return: Always variablename (success)
  */
-int _abs(int)
+int _abs(int i)
 {
-	int i;
-
-	if (i < 0);
+	if (i < 0)
 	{
 		i *= -1;
 	}
