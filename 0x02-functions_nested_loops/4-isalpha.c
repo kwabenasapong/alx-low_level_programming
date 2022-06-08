@@ -2,7 +2,7 @@
 
 /**
  *_isalpha - entry point
- *int c: integer value received by the function
+ *@c: integer value received by the function
  *Return: 1 is false, 0 is true
  */
 int _isalpha(int c)

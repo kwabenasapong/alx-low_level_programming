@@ -2,7 +2,7 @@
 
 /**
  *_islower - entry point
- *int c: the integer value the function receives
+ *@c: the integer value the function receives
  *Return: 1 if true, 0 is false
  */
 int _islower(int c)
