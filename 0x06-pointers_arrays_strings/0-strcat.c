@@ -8,6 +8,7 @@ int _strlen(char *s);
  * @dest: pointer to function
  * @src: pointer function
  * Return: dest (success)
+ *
  */
 char *_strcat(char *dest, char *src)
 {
@@ -22,6 +23,11 @@ char *_strcat(char *dest, char *src)
 	return (dest);
 }
 
+/**
+ * _strlen - entry point
+ * @s: pointer to function
+ * Return: c (success)
+ */
 int _strlen(char *s)
 {
 	int c = 0;
