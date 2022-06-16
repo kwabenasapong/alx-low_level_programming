@@ -17,7 +17,7 @@ int _strcmp(char *s1, char *s2)
 	int a;
 
 	for (a = 0; (a < l || a < k); a++)
-		return (s1[a] - s2[a]);
+	return (s1[a] - s2[a]);
 }
 
 /**
