@@ -14,7 +14,6 @@ int _strcmp(char *s1, char *s2)
 {
 	int l = _strlen(s1);
 	int k = _strlen(s2);
-	int a;
 
 	if (l == k)
 		return (0);
