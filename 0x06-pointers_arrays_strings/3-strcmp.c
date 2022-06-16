@@ -16,14 +16,10 @@ int _strcmp(char *s1, char *s2)
 	int k = _strlen(s2);
 	int a;
 
-	for (a = 0; (a < l || a < k); a++)
-	{
-		if (s1[a] == s2[a])
-			return (0);
-		else if (s1[a] < s2[a])
-			return (-1);
-	}
-	return (1);
+	if (l == k)
+		return (0);
+	else
+		return (l - k);
 }
 
 /**
