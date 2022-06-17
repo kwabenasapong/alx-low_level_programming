@@ -19,7 +19,10 @@ char *leet(char *s)
 		while (j < 10)
 		{
 			if (s[i] == key[j])
+			{
 				s[i] = code[j];
+				break;
+			}
 			j++;
 		}
 		i++;
