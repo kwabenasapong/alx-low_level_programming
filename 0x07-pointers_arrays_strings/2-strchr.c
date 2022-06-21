@@ -5,7 +5,7 @@
  *
  * @s: pointer
  * @c: char variable
- * Return: (s + i)
+ * Return: (s + i) or NULL
  */
 char *_strchr(char *s, char c)
 {
@@ -16,5 +16,5 @@ char *_strchr(char *s, char c)
 		if (*(s + i) == c)
 			return (s + i);
 	}
-	return (s + i);
+	return (NULL);
 }
