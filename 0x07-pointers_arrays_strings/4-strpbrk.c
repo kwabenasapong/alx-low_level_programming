@@ -2,11 +2,10 @@
 
 /**
  * _strpbrk - entry point
+ *
  * @s: pointer
  * @accept: pointer
- *
- * Return: If a set is matched - a pointer to the matched byte.
- * If no set is matched - NULL.
+ * Return: pointer or NULL
  */
 char *_strpbrk(char *s, char *accept)
 {
@@ -14,7 +13,7 @@ char *_strpbrk(char *s, char *accept)
 
 	for ( ; *s; s++)
 	{
-		for (i = 0; *(accept + i); i++)
+		for (i = 0; *(accept + j); i++)
 		{
 			if (*s == *(accept + i))
 				return (s);
