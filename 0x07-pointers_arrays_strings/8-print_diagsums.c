@@ -17,11 +17,11 @@ void print_diagsums(int *a, int size)
 
 	for (i = 0; i < n; i += size + 1)
 	{
-		pri = a[i];
+		pri += a[i];
 	}
 	for (j = size - 1; j < n - 1; j += size - 1)
 	{
-		sec = a[j];
+		sec += a[j];
 	}
 
 	printf("%d, %d\n", pri, sec);
