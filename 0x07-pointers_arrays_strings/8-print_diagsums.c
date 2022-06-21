@@ -10,17 +10,19 @@
  */
 void print_diagsums(int *a, int size)
 }
-	int i, j, pri, sec;
+	int i, j;
+	int pri = 0;
+	int sec = 0;
+	int n = size * size;
 
-	for (i = 0; i < size; i++)
+	for (i = 0; i < n; i += size + 1)
 	{
-		for (j = 0; j < size; j++)
-		{
-			if (i == j)
-				pri += a[i][j];
-			if ((i + j) == (n - 1))
-				sec += a[i][j];
-		}
+		pri = a[i];
 	}
+	for (j = size - 1; j < n - 1; j += size - 1)
+	{
+		sec = a[j];
+	}
+
 	printf("%d, %d\n", pri, sec);
 }
