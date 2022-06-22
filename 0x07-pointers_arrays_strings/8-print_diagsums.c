@@ -11,8 +11,8 @@
 void print_diagsums(int *a, int size)
 {
 	int i, n;
-	int pri;
-	int sec;
+	int pri = 0;
+	int sec = 0;
 
 	n = size * size;
 	for (i = 0; i < n; i += size + 1)
