@@ -1,3 +1,4 @@
+#include "main.h"
 #include <stdio.h>
 
 /**
@@ -8,19 +9,19 @@
  * Return: nothing
  */
 void print_diagsums(int *a, int size)
-}
-	int i, j;
-	int pri = 0;
-	int sec = 0;
-	int n = size * size;
+{
+	int i, n;
+	int pri;
+	int sec;
 
+	n = size * size;
 	for (i = 0; i < n; i += size + 1)
 	{
-		pri += a[i];
+		pri = *(a + i);
 	}
-	for (j = size - 1; j < n - 1; j += size - 1)
+	for (i = size - 1; i < n - 1; i += size - 1)
 	{
-		sec += a[j];
+		sec = *(a + i);
 	}
 
 	printf("%d, %d\n", pri, sec);
