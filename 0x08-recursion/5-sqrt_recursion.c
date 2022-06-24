@@ -33,7 +33,7 @@ int is_sqrt(int n, int m)
 		return (1);
 	else if (m < 1)
 		return (-1);
-	else if (_pow_recursion(m, 2) == n)
+	else if (m * m == n)
 		return (m);
 	return (is_sqrt(n, m - 1));
 }
