@@ -1,25 +1,33 @@
 #include "main.h"
 
+int checkPrime(int n, int i);
+
 /**
- * _pow_recursion - entry point
+ * is_prime_number - entry point
  *
- * @x: integer variable
- * @y: integer variable
- * Return: power of x^y or x^1 or x^0 or -1 != +y
+ * @n: integer variable
+ * Return: Always 0 (success)
  */
-int _pow_recursion(int x, int y)
+int is_prime_number(int n)
 {
-	if (y < 0)
-	{
-		return (-1);
-	}
-	if (y == 0)
-	{
+	if (n <= 1)
+		return (0);
+	if (checkPrime(n, n / 2) > 0)
 		return (1);
-	}
-	if (y == 1)
-	{
-		return (x);
-	}
-	return (x * _pow_recursion(x, y - 1));
+	return (0);
+}
+
+/**
+ * checkPrime - helper function
+ * @n: int
+ * @i: int
+ * Return: Prime number
+ */
+int checkPrime(int n, int i)
+{
+	if (i == 1)
+		return (1);
+	if (n % i == 0)
+		return (0);
+	return (checkPrime(n, i - 1));
 }
