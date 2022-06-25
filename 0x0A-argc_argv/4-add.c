@@ -28,7 +28,7 @@ int main(int argc, char **argv)
 			for (l = 0; l < lstr; l++)
 			{
 				if (isdigit(*(spt + l)) == 0)
-				{	
+				{
 					printf("Error\n");
 				return (1);
 				}
