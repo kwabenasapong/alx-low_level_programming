@@ -2,7 +2,6 @@
 #include <ctype.h>
 #include <string.h>
 #include <stdlib.h>
-#include "main.h"
 
 /**
  * main - entry point
@@ -22,7 +21,7 @@ int main(int argc, char **argv)
 		printf("0\n");
 	else
 	{
-		for (k = 1; argc; k++)
+		for (k = 1; k < argc; k++)
 		{
 			spt = argv[k];
 			lstr = strlen(spt);
