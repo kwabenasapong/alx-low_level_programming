@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include "holberton.h"
+#include "main.h"
 int _strlen(char *s);
 /**
  * argstostr - concantenate all the command line arguments

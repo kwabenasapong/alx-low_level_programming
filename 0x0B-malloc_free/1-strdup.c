@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include "holberton.h"
+#include "main.h"
 int _strlen(char *s);
 /**
  * _strdup - returns a pointer to a new string which is a duplicate of the

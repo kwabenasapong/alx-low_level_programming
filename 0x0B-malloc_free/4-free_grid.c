@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include "holberton.h"
+#include "main.h"
 
 /**
  * free_grid - frees a 2 diminesional grid created by the function alloc_grid
