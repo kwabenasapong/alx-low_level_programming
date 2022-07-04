@@ -31,8 +31,10 @@ char *_strcpy(char *dest, char *src)
 	int i, l;
 
 	l = _strlen(src);
-	for (i = 0; i <= l; i++)
+	for (i = 0; i < l; i++)
 		dest[i] = src[i];
+	dest[i] = '\0';
+
 	return (dest);
 }
 
