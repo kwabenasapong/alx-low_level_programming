@@ -1,12 +1,10 @@
 #include "dog.h"
-#include <stdio.h>
 #include <stdlib.h>
 
 
 /**
  * free_dog - creates a new dog
  * @d: struct variable
- * Return: nothing
  */
 
 void free_dog(dog_t *d)
