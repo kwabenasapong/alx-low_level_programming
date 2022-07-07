@@ -7,9 +7,9 @@
  * @size: arg 2 (size of array)
  * @cmp: arg 3 (pointer to array)
  *
- * Return: nothing
+ * Return: i (if found) or -1 (if not found or size <= 0)
  */
-int int_index(int *array, size_t size, int (*cmp)(int))
+int int_index(int *array, int size, int (*cmp)(int))
 {
 	unsigned int i;
 
