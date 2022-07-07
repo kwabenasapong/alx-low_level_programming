@@ -8,7 +8,7 @@
  *
  * Return: 0 always (success) 0r other to indicate error
  */
-int main(int argc, char **argv)
+int main(int __attribute__((__unused__)) argc, char **argv)
 {
 	int num1, num2, calc;
 	char *operator;
