@@ -15,6 +15,7 @@ unsigned int binary_to_uint(const char *b)
 {
 	int i, j, k, l, len_b, sum;
 	unsigned int result;
+	const char *ptr;
 
 	len_b = _strlen(b);
 
@@ -31,7 +32,8 @@ unsigned int binary_to_uint(const char *b)
 	sum = 0;
 	for (i = len_b - 1; i >= 0; i--)
 	{
-		k = _atoi(b[i]);
+		ptr = &*(b + i);
+		k = _atoi(ptr, 2);
 		l = k * nSqrt(j, 2);
 		sum += l;
 		j++;
