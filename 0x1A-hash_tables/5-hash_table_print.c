@@ -44,7 +44,6 @@ void hash_table_print(const hash_table_t *ht)
 
 	if (ht == NULL)
 	{
-		printf("{}\n");
 		return;
 	}
 	count_kv = count_kv_pair(ht, head);
