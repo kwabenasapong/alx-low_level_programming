@@ -124,6 +124,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 				return (0);
 			return (1);
 		}
+		element_1 = element_1->next;
 	}
 	element_2 = malloc(sizeof(hash_node_t));
 	if  (element_2 ==NULL)
@@ -134,7 +135,9 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 	else
 	{
-		add_new_node(element_2, element_2->key, element_2->value);
+		/*add_new_node(element_2, element_2->key, element_2->value);*/
+		element_2->next = ht->array[i];
+		ht->array[i] = element_2;
 	return (1);
 	}
 }
@@ -148,7 +151,7 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	if (key == NULL || ht == NULL)
 	{
 		fprintf(stderr, "Error: cannot be empty");
-		return (0);
+		return (NULL);
 	}
 
 	i = key_index((const unsigned char *)key, ht->size);
