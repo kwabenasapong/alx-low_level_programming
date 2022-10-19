@@ -28,3 +28,7 @@ working in the C language. I update this repo with my learning progresses with h
 * [0x13-more_singly_linked_lists](./0x13-more_singly_linked_lists)
 * [0x14-bit_manipulation](./0x14-bit_manipulation)
 * [0x15-file_io](./0x15-file_io)
+* [0x17-doubly_linked_lists](./0x17-doubly_linked_lists)
+* [0x18-dynamic_libraries](./0x18-dynamic_libraries)
+* [0x19. C - Stacks, Queues - LIFO, FIFO - Monty Project](https://github.com/manuel4life/monty)
+* [0x1A-hash_tables](./0x1A-hash_tables)
