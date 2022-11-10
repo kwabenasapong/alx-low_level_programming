@@ -10,13 +10,13 @@ def island_perimeter(grid):
         for x in range(len(grid[y])):
             if grid[y][x] == 1:
                 try:
-                    if (y - 1) < 0 or grid[y - 1][x] == 0:
+                    if grid[y - 1][x] == 0:
                         cell_per = cell_per + 1
-                    if (x - 1) < 0 or grid[y][x - 1] == 0:
+                    if grid[y][x - 1] == 0:
                         cell_per = cell_per + 1
-                    if (x + 1) < 0 or grid[y][x + 1] == 0:
+                    if x == 0 or grid[y][x + 1] == 0:
                         cell_per = cell_per + 1
-                    if (y + 1) < 0 or grid[y + 1][x] == 0:
+                    if y == 0 or grid[y + 1][x] == 0:
                         cell_per = cell_per + 1
                 except IndexError:
                     cell_per = cell_per + 1
