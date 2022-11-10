@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 '''returns the perimeter of the island described in grid'''
+
+
 def island_perimeter(grid):
     cell_per = 0
     for y in range(len(grid)):
@@ -14,6 +16,3 @@ def island_perimeter(grid):
                 if grid[y + 1][x] == 0:
                     cell_per = cell_per + 1
     return (cell_per)
-
-
-
