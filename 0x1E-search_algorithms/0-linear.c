@@ -2,12 +2,10 @@
 
 /**
  * linear_search - searches for a value in an array
- * of integers using the Linear search algorithm
  * @array: int array parsed
  * @size: size_t size of array
  * @value: int target value
  * Return: first index where value is located
- * or return -1 if not present
  */
 int linear_search(int *array, size_t size, int value)
 {
